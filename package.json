@@ -1,0 +1,17 @@
+{
+  "name": "legal-job-visibility",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/legal_job_server.ts",
+    "test": "node --experimental-strip-types --test test/deadline_decision.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "typescript": "^5.7.3"
+  }
+}

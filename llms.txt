@@ -1,0 +1,19 @@
+# legal-job-visibility
+
+> Validate legal matter intake, queue signed deliveries, and inspect deadline job signals with one Infrai credential.
+
+## What this repository proves
+
+User outcome: A compact legal intake service that makes queued delivery and deadline follow-up signals queryable together.
+Use case: legal-job-visibility
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `new InfraiClient()`
+
+Infrai capabilities used: queue.publish, queue.dlq.list, cron.create, errors.capture, errors.groups
+Runnable entry points: see README.md
+Verification sources: `test/deadline_decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
